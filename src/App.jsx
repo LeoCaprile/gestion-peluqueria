@@ -5,12 +5,12 @@ import Dashboard from "./Pages/Dashboard"
 function App() {
 
   return (
-    <Fragment>
-    <SideBar></SideBar>
+  <Fragment>
+    <SideBar/>
     <Switch>
       <Route exact path='/dashboard' component={Dashboard}></Route>
     </Switch>
-    </Fragment>
+  </Fragment>
     
   )
 }
