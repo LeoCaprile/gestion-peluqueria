@@ -8,8 +8,8 @@ const Dashboard = () => {
 
     return (
 
-<div className='grid grid-cols-2 grid-rows-2 place-items-center pl-16 h-screen'>
-      <BarChart className="w-96 h-96 shadow-lg p-5"/>
+<div className='grid grid-cols-2 grid-rows-2 place-items-center h-screen pl-16 '>
+      <BarChart className="shadow-lg p-5 rounded-lg w-full h-full"/>
 </div>
 
     )

@@ -4,7 +4,7 @@ import { Bar, Line } from 'react-chartjs-2'
 const BarChart = (props) => {
 
     const handleActualWeek = () =>{
-        
+
         const actualYear = new Date().getFullYear();
         const actualDay = new Date().getDate();
         const actualMonth = new Date().getMonth();
@@ -22,6 +22,7 @@ const BarChart = (props) => {
 
     const options = {
         responsive: true,
+        maintainAspectRatio : false,
         plugins: {
           legend: {
             position: 'top',
@@ -35,7 +36,7 @@ const BarChart = (props) => {
 
     return (
         <div {...props}>
-    <Bar
+    <Bar style={{height:'100%', width:'100%'}}
     datasetIdKey='id'
     options={options}
     data={{
